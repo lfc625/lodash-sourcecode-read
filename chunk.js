@@ -18,7 +18,7 @@ function chunk(array, size) {
     let resIndex = 0
     //创建新数组
     const result = new Array(Math.ceil(length / size))
-    //调用slice 方法划分
+    //调用slice 方法切割数组
     while (index < length) {
         result[resIndex++] = slice(array, index, (index += size))
     }
